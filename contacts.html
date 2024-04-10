@@ -35,6 +35,14 @@
             height: 150px;
             float: left;
         }
+        table#form {
+            width: 80%;
+            margin: auto;
+        }
+        table#form td {
+            text-align: left;
+            border: 2px solid red;
+        }
     </style>
 </head>
 <body>
@@ -55,21 +63,35 @@
             <a href="contacts.html">О нас</a>
         </nav>
         <div id="main">
-            <p>
-                Концепция отдыха с нашей компанией - это отдых в новом формате,
-                где учтены интересы всех поколейний.
-            </p>
-            <p>
-                Наши основыные направления:
-                <ul>
-                    <li>Крым</li>
-                    <li>Кавказ</li>
-                    <li>Алтай</li>
-                </ul>
-            </p>
-            <p>
-                Акции и скидки
-            </p>
+            <p>Наш адресс: г. Белогорск, ул. Ракетная, 18.</p>
+            <p>Для свзяи с нами заполните форму:</p>
+            <form method="get" action="#">
+                <table id="form">
+                    <tr>
+                        <td>Введите свое имя</td>
+                        <td><input type="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Введите ваш номер телефона</td>
+                        <td><input type="phone"></td>
+                    </tr>
+                    <tr>
+                        <td>Введите ваш электронный адресс</td>
+                        <td><input type="mail"></td>
+                    </tr>
+                    <tr>
+                        <td>Ваше сообщение</td>
+                        <td>
+                            <textarea name="text" rows="3"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input name="otp" type="submit" value="Отправить">
+                        </td>
+                    </tr>
+                </table>
+            </form>
         </div>
         <footer>
             Это сайт, предназначенный для обучения
