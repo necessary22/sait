@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт туристической компании</title>
+    <style>
+        div#contenet {
+            width: 80%;
+            border: none;
+            margin: auto;
+        }
+        header, footer {
+            padding: 1em;
+            color: #fff;
+            background-color: #007196;
+            clear: left;
+            text-align: center;
+        }
+        nav {
+            height: 40px;
+            border: solid #333;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            padding: 1em;
+        }
+        #main {
+            padding: 1em;
+        }
+        div #logo img {
+            width: 200px;
+            height: 150px;
+            float: left;
+        }
+        table#tours {
+            width: 80%;
+            margin: auto;
+        }
+        table#tours td {
+            text-align: left;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id = "content">
+        <header>
+            <div id="logo">
+                <img src="img/logo.jpg" alt="logo">
+            </div>
+            <div id="name">
+                <h1>
+                    ПУТЕШЕСТВУЙ С НАМИ!
+                </h1>
+            </div>
+        </header>
+        <nav>
+            <a href="index.html">Главная страница</a>
+            <a href="turs.html">Наши туры</a>
+            <a href="contacts.html">О нас</a>
+        </nav>
+        <div id="main">
+            <table id="tours">
+                <tr>
+                    <td rowspan="2">Туры в Крым</td>
+                    <td>Отель "Волна"</td>
+                </tr>
+                <tr>
+                    <td>Отель "Море"</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Туры на Кавказ</td>
+                    <td>Курортный отдых</td>
+                <tr>
+                    <td>Горный туризм</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Туры на Алтай</td>
+                    <td>Зеленый туризм</td>
+                <tr>
+                    <td>Конные туры</td>
+                </tr>
+            </table>
+            <p>
+                Наши основыные направления:
+                <ul>
+                    <li>Крым</li>
+                    <li>Кавказ</li>
+                    <li>Алтай</li>
+                </ul>
+            </p>
+            <p>
+                Акции и скидки
+            </p>
+        </div>
+        <footer>
+            Это сайт, предназначенный для обучения
+        </footer>
+    </div>
+</body>
+</html>
