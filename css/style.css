@@ -1,0 +1,46 @@
+div#content {
+    width: 80%;
+    border: none;
+    margin: auto;
+}
+header, footer {
+    padding: 1em;
+    color: #fff;
+    background-color: #007196;
+    clear: left;
+    text-align: center;
+}
+nav {
+    height: 40px;
+    border: solid #333;
+    padding: 1em;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    padding: 1em;
+}
+#main {
+    padding: 1em;
+}
+div #logo img {
+    width: 200px;
+    height: 150px;
+    float: left;
+}
+table#tours {
+    width: 80%;
+    margin: auto;
+}
+table#tours td {
+    text-align: left;
+    border: 2px solid red;
+}
+table#form {
+    width: 80%;
+    margin: auto;
+}
+table#form td {
+    text-align: left;
+    border: 2px solid red;
+}
