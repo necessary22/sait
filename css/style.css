@@ -57,3 +57,25 @@ table#form td {
     text-align: center;
     border: 2px solid red;
 }
+#tours {
+    text-align: left;
+}
+.tour {
+    width: 30%;
+    border: #66CDAA solid 2px;
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+    float: left;
+}
+.tour img {
+    max-width: 150px;
+    height: 150px;
+}
+div.tour a {
+    background-color: #79d1fa;
+    text-decoration: none;
+    padding: 3px;
+    color: #fff;
+    box-shadow: 20px 0 20px -20px #000 inset, -20px 0 20px -20px #000 inset;
+}
