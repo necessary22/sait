@@ -2,6 +2,10 @@ div#content {
     width: 80%;
     border: none;
     margin: auto;
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
 }
 header, footer {
     padding: 1em;
@@ -15,13 +19,22 @@ nav {
     border: solid #333;
     padding: 1em;
     text-align: center;
+    list-style-type: none;
+    background-color: #79d1fa;
 }
 nav a {
     text-decoration: none;
-    padding: 1em;
+    padding: 10px;
+    margin-right: 10px;
+    color: #fff;
+    border: solid white 2px;
+
 }
 #main {
     padding: 1em;
+    color: #654455;
+    font-weight: normal;
+    text-align: justify;
 }
 div #logo img {
     width: 200px;
@@ -41,6 +54,6 @@ table#form {
     margin: auto;
 }
 table#form td {
-    text-align: left;
+    text-align: center;
     border: 2px solid red;
 }
