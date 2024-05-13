@@ -1,5 +1,6 @@
+
 .body-top {
-    width: 68%;
+    width: 70%;
     border: none;
     margin: auto;
     font-family:Verdana;
@@ -12,6 +13,11 @@ body {
     min-height: 100%;
     position: relative;
     padding-bottom: 70px;
+}
+
+.container {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 #menu {
@@ -80,6 +86,7 @@ html {
     background-color: #007196;
 }
 
+
 @media screen and (max-width: 768px) {
     #logo {
         max-width: 100px;
@@ -89,3 +96,4 @@ html {
         font-size: 14px;
     }
 }
+

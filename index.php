@@ -2,10 +2,6 @@
     // Запуск сессии
     session_start();
     ?> 
-
-
-
-<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -31,10 +27,10 @@
         ?>
         <div id="auth_block">
             <div id="link_register">
-                <a href = "registr.php">Регистрация</a>
+                <a href = "php/registr.php">Регистрация</a>
             </div>
             <div id="link_auth">
-                <a href = "avtor.php">Авторизация</a>
+                <a href = "php/avtor.php">Авторизация</a>
             </div>
         </div>
         
@@ -45,10 +41,10 @@
         ?>
         <div id="exit_block">
             <div id="link_remark">
-                <a href = "remarks.php">Вы можете оставить отзыв</a>
+                <a href = "php/remarks.php">Вы можете оставить отзыв</a>
             </div>
             <div id="link_exit">
-                <a href = "exit.php">Выход</a>
+                <a href = "php/exit.php">Выход</a>
             </div>
         </div>
         
@@ -58,9 +54,9 @@
     </header>
     <div id = "menu">
         <nav class = "nav nav-pills flex-column flex-sm-row">
-            <a class="flex-sm-fill text-sm-center nav-link" href="index.html" >Главная</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="tours.html" >Наши туры</а>
-            <a class="flex-sm-fill text-sm-center nav-link" href="contacts.html">0 нас</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="index.php" >Главная</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="turs.php" >Наши туры</а>
+            <a class="flex-sm-fill text-sm-center nav-link" href="contacts.php">0 нас</a>
         </nav>
     </div>
     <main class ="flex">

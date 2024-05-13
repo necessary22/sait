@@ -1,13 +1,11 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World!</title>
+    <title>Туры</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
-    
 </head>
 
 <body class="body-top">
@@ -22,13 +20,13 @@
         </div>
     </header>
     <div class="container">
-        <div id="menu">
-            <nav class="nav nav-pills flex-column flex-sm-row">
-                <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Главная</a>
-                <a class="flex-sm-fill text-sm-center nav-link" href="tours.html">Туры</a>
-                <a class="flex-sm-fill text-sm-center nav-link" href="contacts.html">О нас</a>
-            </nav>
-        </div>
+    <div id = "menu">
+        <nav class = "nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link" href="index.php" >Главная</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="turs.php" >Наши туры</а>
+            <a class="flex-sm-fill text-sm-center nav-link" href="contacts.php">0 нас</a>
+        </nav>
+    </div>
         <main class="flex">
             <div class="row">
                 <div class="col">
@@ -126,39 +124,42 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
     $(document).ready(function() {
-  $('#orderForm').on('submit', function() {
-    let tour = $("#inp1").val();
-    let date = new Date($("#inp2").val());
-    let month = date.getMonth();
-    let kol = $("#inp3").val();
-    kol = Number(kol);
-    let email = $("#inp4").val();
-    let stoim = 0;
-    if (tour == 'Крым') {
-      if ((month == 5) || (month == 6) || (month == 7) || (month == 8)) {
-        stoim = kol * 500;
-      } else {
-        stoim = kol * 300;
-      }
-    }
-    if (tour == 'Кавказ') {
-      if ((month == 12) || (month == 1) || (month == 2) || (month == 5) || (month == 6) || (month == 7) || (month == 8)) {
-        stoim = kol * 300;
-      } else {
-        stoim = kol * 250
-      }
-    }
-    if (tour == 'Алтай') {
-      {
-        stoim = kol * 1000;
-      }
-    }
-    alert(`Примерная стоимость вашего тура на ${kol} человек составит ${stoim} у.е. Мы свяжемся с ВАМИ!`);
-  }); 
-});   
-
-        
+        $('#orderForm').on('submit', function() {
+            let tour = $("#inp1").val();
+            let date = new Date($("#inp2").val());
+            let month = date.getMonth();
+            let kol = $("#inp3").val();
+            kol = Number(kol);
+            let email = $("#inp4").val();
+            let stoim = 0;
+            if (tour == 'Крым') {
+            if ((month == 5) || (month == 6) || (month == 7) || (month == 8)) {
+                stoim = kol * 500;
+            } else {
+                stoim = kol * 300;
+            }
+            }
+            if (tour == 'Кавказ') {
+            if ((month == 12) || (month == 1) || (month == 2) || (month == 5) || (month == 6) || (month == 7) || (month == 8)) {
+                stoim = kol * 300;
+            } else {
+                stoim = kol * 250
+            }
+            }
+            if (tour == 'Алтай') {
+            {
+                stoim = kol * 1000;
+            }
+            }
+            alert(`Примерная стоимость вашего тура на ${kol} человек составит ${stoim} у.е. Мы свяжемся с ВАМИ!`);
+        }); 
+    });   
     </script>
-
+    <style>
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    </style>
 </body>
 </html>
