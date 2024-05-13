@@ -1,4 +1,3 @@
-
 .body-top {
     width: 70%;
     border: none;
@@ -85,7 +84,6 @@ html {
     color: white;
     background-color: #007196;
 }
-
 
 @media screen and (max-width: 768px) {
     #logo {
