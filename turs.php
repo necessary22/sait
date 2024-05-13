@@ -15,7 +15,6 @@
 
 <body class="body-top">
     <div class="container">
-
         <main class="flex">
             <div class="row">
                 <div class="col">
