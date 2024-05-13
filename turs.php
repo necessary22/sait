@@ -1,4 +1,9 @@
-
+<?php 
+    // Запуск сессии
+    session_start();
+    include ('tpl/header.php');
+    include ('tpl/nav.php');
+?> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,24 +14,8 @@
 </head>
 
 <body class="body-top">
-    <header class="container">
-        <div class="row">
-            <div class="col-3">
-                <img id="logo" src="img/logo.jpg" alt="Logo">
-            </div>
-            <div class="col-9">
-                <h1>Путешествуйте с нами!</h1>
-            </div>
-        </div>
-    </header>
     <div class="container">
-    <div id = "menu">
-        <nav class = "nav nav-pills flex-column flex-sm-row">
-            <a class="flex-sm-fill text-sm-center nav-link" href="index.php" >Главная</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="turs.php" >Наши туры</а>
-            <a class="flex-sm-fill text-sm-center nav-link" href="contacts.php">0 нас</a>
-        </nav>
-    </div>
+
         <main class="flex">
             <div class="row">
                 <div class="col">
@@ -120,6 +109,9 @@
             </div>
         </div>
     </div>
+    <?php
+            include ('tpl/footer.php');
+    ?>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>

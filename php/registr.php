@@ -1,3 +1,9 @@
+<?php 
+    // Запуск сессии
+    session_start();
+    include ('../tpl/header.php');
+    include ('../tpl/nav.php');
+?> 
 <html>
     <head>
         <title>Регистрация</title>

@@ -1,10 +1,10 @@
 <?php
     session_start();
 
-    if (isset($_POST['topic'])) {
-        $topic = $_POST['topic'];
-        if ($topic == '') {
-            unset($topic);
+    if (isset($_POST['tema'])) {
+        $tema = $_POST['tema'];
+        if ($tema == '') {
+            unset($tema);
         }
     }
 
@@ -15,7 +15,7 @@
         }
     }
 
-    if (empty($topic) or empty($text)) {
+    if (empty($tema) or empty($text)) {
         exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!");
     } else {
         include("dbconnect.php");
