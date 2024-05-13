@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Главный страничка</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,8 +23,38 @@
             <div class = "col-9">
                 <h1>Путешествуйте с нами! </h1>
             </div>
-            
         </div>
+
+        <?php
+            if (empty($_SESSION['login']) or empty($_SESSION['id']))
+            {
+        ?>
+        <div id="auth_block">
+            <div id="link_register">
+                <a href = "registr.php">Регистрация</a>
+            </div>
+            <div id="link_auth">
+                <a href = "avtor.php">Авторизация</a>
+            </div>
+        </div>
+        
+        <?php 
+            }
+            else
+            {
+        ?>
+        <div id="exit_block">
+            <div id="link_remark">
+                <a href = "remarks.php">Вы можете оставить отзыв</a>
+            </div>
+            <div id="link_exit">
+                <a href = "exit.php">Выход</a>
+            </div>
+        </div>
+        
+        <?php
+            }
+        ?>
     </header>
     <div id = "menu">
         <nav class = "nav nav-pills flex-column flex-sm-row">
