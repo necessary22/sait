@@ -13,35 +13,52 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body-top">
-    <header class="container">
-        
-    </header>
+    <div id="main">
+        <table id="tours">
+            <tr>
+                <td>
+                    <?php
+                        include("php/dbconnect.php");
 
+                        $result = $mysqli->query("SELECT * FROM remarks");
+                        $table = "<table id='contacts'>";
+                        $k = 1;
+
+                        while ($myrow = $result->fetch_assoc()) {
+                            $table .= "<tr>";
+                            $table .= "<td>".$myrow['tema']."</td>";
+                            $table .= "<td>".$myrow['text']."</td>";
+                            $table .= "</tr>";
+                            $k++;
+                        }
+                        $table .= "</table>";
+                        echo $table;
+                    ?>
+                </td>
+            </tr> 
+        </table> 
+    </div>   
 <?php
     include ('tpl/footer.php');
 ?>
-<?php
-    include("php/dbconnect.php");
-
-    $result = $mysqli->query("SELECT * FROM remarks");
-    $table = "<table id='contacts'>";
-    $k = 1;
-
-    while ($myrow = $result->fetch_assoc()) {
-        $table .= "<tr>";
-        $table .= "<td>".$myrow['tema']."</td>";
-        $table .= "<td>".$myrow['text']."</td>";
-        $table .= "</tr>";
-        $k++;
-    }
-    $table .= "</table>";
-    echo $table;
-?>       
 <style>
 .container {
     padding-right: 0;
     padding-left: 0;
 }
+#tours {
+    text-align: left;
+}
+
+table#tours {
+
+    margin: auto;
+}
+table#tours td{
+    text-align: center;
+    border: 2px solid red;
+}
+
 </style>
 </body>
 </html>

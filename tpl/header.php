@@ -8,7 +8,7 @@
 </head>
 <header class = "container">
         <div class = "row">
-            <div class = "col-3">
+            <div class = "col">
                 <img id = "logo" src = "../img/logo.jpg" >
             </div>
             <div class = "col-9">
@@ -28,7 +28,6 @@
                 <a href = "php/avtor.php">Авторизация</a>
             </div>
         </div>
-        
         <?php 
             }
             else

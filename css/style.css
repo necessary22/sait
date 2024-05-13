@@ -44,14 +44,10 @@ h1 {
     margin: auto;
 }
 
-.tour {
-    border: solid #6fceee;
-    margin: auto;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
+.auth_block {
+    padding-left: 50px;
 }
-.tour_t {
+.tour {
     border: solid #6fceee;
     margin: auto;
     height: 100%;
@@ -64,11 +60,7 @@ h1 {
     height: 170px;
     padding: 5px;
 }
-.tour_t img {
-    width: 250px;
-    height: 170px;
-    padding: 5px;
-}
+
 .tour p .tour img {
     margin: 0 10px;
 }
